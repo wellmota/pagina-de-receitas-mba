@@ -1,7 +1,209 @@
-*,body,h1,h2,h3 {
-  margin: 0px;
-  padding: 0px;
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
   box-sizing: border-box;
 }
 
-#
+:root {
+  --surface-color: #f0e8c2;
+  --text-color-primary: #291b1a;
+}
+
+body {
+  background-image: url(assets/bg-image.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text-color-primary);
+  font-family: "Alice", serif;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.flex {
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "clig" off, "liga" off;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.container {
+  background: rgba(70, 32, 6, 0.668);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%; /* Full width of the viewport */
+  height: 100%; /* Full height of the viewport */
+  padding-top: 2rem;
+}
+
+#page {
+  padding: 1.5rem;
+  max-width: 50rem;
+  border-radius: 1.5rem;
+  background: var(--surface-color, #f0e8c2);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 1.5rem;
+}
+
+#page main {
+  display: flex;
+  padding: 0rem 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+
+#about .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#about ul li {
+  list-style: none;
+}
+
+#page img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+#ingredients ul li {
+  list-style-position: inside;
+  text-align: left;
+  margin-left: 0px;
+  line-height: 1.5rem;
+}
+
+section h3 + p {
+  padding-top: 0.25rem;
+}
+
+p {
+  padding-bottom: 1rem;
+}
+
+.caption {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0 4rem 0;
+  gap: 0.24rem;
+  color: var(--surface-color);
+}
